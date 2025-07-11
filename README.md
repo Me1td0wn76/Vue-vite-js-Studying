@@ -1,5 +1,47 @@
-# Vue 3 + Vite
+# リアルタイムホワイトボード＋チャット＋通知アプリ
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+このアプリは、リアルタイムでお絵描きやチャットができる可愛いUIのWebアプリです。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 主な機能
+- リアルタイムホワイトボード（色・太さ・消しゴム・サイズ変更対応）
+- リアルタイムチャット（好きな名前で送信可能）
+- 通知機能
+- ピンク基調の可愛いデザイン
+
+## 使い方
+1. 必要なパッケージをインストール
+   ```sh
+   npm install
+   ```
+2. サーバーを起動
+   ```sh
+   node server.js
+   ```
+3. 別ターミナルでVite開発サーバーを起動
+   ```sh
+   npm run dev
+   ```
+4. ブラウザで `http://localhost:5173` にアクセス
+
+## 機能詳細
+### ホワイトボード
+- 色・太さを自由に選択
+- 消しゴムで消去可能
+- サイズ変更可能
+- 他のユーザーとリアルタイムで共有
+
+### チャット
+- 好きな名前を入力してメッセージ送信
+- 履歴がリアルタイムで表示
+
+### 通知
+- 新しいチャットメッセージが届くと画面右上に通知
+
+## 技術スタック
+- Vue 3 + Vite
+- Tailwind CSS
+- Socket.IO (リアルタイム通信)
+
+---
+
+可愛いUIでみんなと楽しくコミュニケーションしましょう！
