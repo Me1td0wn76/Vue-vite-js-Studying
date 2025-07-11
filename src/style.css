@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 最低限のリセットのみ残す */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe4ec 0%, #ffd6f5 50%, #ffe4ec 100%);
+  font-family: 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e75480;
+  font-weight: bold;
+  text-shadow: 0 2px 8px #ffd6f5;
+}
+
+.card, .chat-outer, .whiteboard-container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 #f8bbd0;
+  border: 2px solid #f8bbd0;
+}
+
+input, textarea {
+  border-radius: 9999px;
+  border: 2px solid #f8bbd0;
+  padding: 0.5em 1em;
+  background: #fff0f6;
+  color: #e75480;
+  font-size: 1em;
+}
+
+button {
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #ffb6d5 0%, #ff8ecf 100%);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0.6em 1.5em;
+  box-shadow: 0 2px 8px #f8bbd0;
+  transition: background 0.2s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #ff8ecf 0%, #ffb6d5 100%);
+  transform: translateY(-2px) scale(1.05);
+}
+
+::-webkit-input-placeholder { color: #f8bbd0; }
+::-moz-placeholder { color: #f8bbd0; }
+:-ms-input-placeholder { color: #f8bbd0; }
+::placeholder { color: #f8bbd0; }
